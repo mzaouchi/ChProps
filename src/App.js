@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Child from './Components/Child';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  var imageAl = "https://pbs.twimg.com/media/F44dtJ9XkAA027z.jpg:large"
+  var name = "Bacola"
+  var description = "Bradley Barcola, né le 2 septembre 2002 à Lyon, est un footballeur français, qui évolue au poste d'ailier gauche au Paris Saint-Germain."
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Child imageAl={imageAl} name={name} description={description}/>
     </div>
   );
 }
